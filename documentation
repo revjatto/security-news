@@ -1,0 +1,15 @@
+Suppose you want to remove a 'comments' table from a blog application. You can do so by performing the following tasks from the command line (e.g., Terminal).
+
+Step one:
+
+$ rails console 
+Step two:
+
+$ ActiveRecord::Migration.drop_table(:comments)
+Step three:
+
+$ rake db:migrate
+Go check your schema.rb to see that the table was removed.
+
+site from this youtube site
+https://www.youtube.com/watch?v=34aNWGDCQ9E&t=1933s
